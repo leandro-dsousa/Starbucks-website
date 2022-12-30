@@ -1,0 +1,341 @@
+html, body {
+  margin: 0;
+  font-family: "SoDo Sans Semibold", Helvetica Neue, Arial, Helvetica,
+    sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #00754a white;
+}
+
+/*For Chrome, Edge and Safari*/
+html ::-webkit-scrollbar {
+  width: 10px;  
+}
+
+/*For Chrome, Edge and Safari*/
+html ::-webkit-scrollbar-track {
+  background: white;
+}
+
+/*For Chrome, Edge and Safari*/
+html ::-webkit-scrollbar-thumb {
+  background-color: #00754a;
+  border-radius: 100px;
+}
+
+.navbar {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left svg {
+  width: 50px;
+}
+
+.navbar-left div {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar-left div:hover {
+  color: #00754a;
+  cursor: pointer;
+}
+
+.navbar-left > *,
+.navbar-right > * {
+  margin: 10px;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+.find-a-store {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.find-a-store:hover,
+.find-a-store:hover a {
+  color: #00754a;
+}
+
+.sign-in,
+.join-now {
+  border: 1px solid black;
+  border-radius: 60px;
+  padding: 5px 20px 5px 20px;
+}
+
+.join-now {
+  background-color: black;
+  color: white;
+}
+
+.join-now:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.sign-in:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+@keyframes textclip {
+  from {
+    background-position: 0 center;
+  }
+
+  to {
+    background-position: 250px center;
+  }
+}
+
+.rewards:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 8s linear infinite;
+}
+
+.container {
+  z-index: -1;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  position: fixed;
+}
+
+.content {
+  margin-block: 3.2rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column {
+  padding-block: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.column > * {
+  width: 50%;
+}
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  text-justify: inter-word;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.image-content h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #00754a;
+}
+
+.image-content a {
+  text-align: center;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.image-content a {
+  border: 1px solid black;
+  border-radius: 60px;
+  text-decoration: none;
+  color: black;
+  padding: 5px 20px 5px 20px;
+  width: 150px;
+}
+
+.image-content a:hover,
+.column .glass a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.disclaimer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center !important;
+  max-width: calc(1em * (calc(600 / 13)));
+  font-weight: lighter !important;
+  margin-top: 30px;
+}
+
+.disclaimer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  display: inline-block;
+  justify-content: space-between;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.65);
+  padding-inline: 2.4rem;
+}
+
+.footer h2 {
+  font-size: 1.2rem;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.about-us,
+.careers,
+.social-impact,
+.for-business-partners,
+.order-and-pickup,
+.social-media {
+  vertical-align: top;
+  display: inline-block;
+  flex-direction: column;
+  padding-block: 30px;
+}
+
+.about-us a,
+.careers a,
+.social-impact a,
+.for-business-partners a,
+.order-and-pickup a,
+.social-media a {
+  text-decoration: none;
+}
+
+[id="spotify"]:hover {
+  color: rgba(30, 215, 96, 0.87) !important;
+}
+
+[id="facebook"]:hover {
+  color: rgba(59, 89, 152, 0.87) !important;
+}
+
+[id="pinterest"]:hover {
+  color: rgba(230, 0, 35, 0.87) !important;
+}
+
+[id="instagram"]:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[id="youtube"]:hover {
+  color: rgba(230, 33, 23, 0.87) !important;
+}
+
+[id="twitter"]:hover {
+  color: rgba(8, 160, 233, 0.87) !important;
+}
+
+ul {
+  text-align: justify;
+  list-style: none;
+}
+
+ul h2 {
+  display: block;
+  color: rgba(0, 0, 0, 0.87) !important;
+}
+
+li {
+  text-align: -webkit-match-parent;
+}
+
+li a {
+  color: rgba(0, 0, 0, 0.58) !important;
+  border: none !important;
+  word-spacing: -0.01em;
+}
+
+li a:hover {
+  color: rgba(0, 0, 0, 0.87) !important;
+}
+
+.terms-and-conditions {
+  padding-inline: 2.4rem;
+  padding-block: 30px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.terms-and-conditions a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.58);
+  width: 100%;
+}
+
+.terms-and-conditions a:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.terms-and-conditions span {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.rights {
+  padding-inline: 2.4rem;
+  padding-block: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.58);
+}
